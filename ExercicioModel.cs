@@ -225,9 +225,80 @@ namespace Exercicios
             }//fim if
         }//fim do metodo Ex05
 
-    
+        public void ContarParImpar()
+        {
+            int contarPar = 0;
+            int contarImpar = 0;
 
 
-              
+            for (int i= 0; i<10; i++)
+             {
+                Console.Write(i + 1 + "° número ");
+                int num = Convert.ToInt32(Console.ReadLine());
+                //Comparações
+                if (num % 2 == 0)
+                { contarPar++; }
+                else { contarImpar++; }
+             }
+            Console.WriteLine("A quantidade de pares é: " + contarPar + " A quantidade de ímpares é: " + contarImpar);
+        }
+        public string multiploFor(int numero)
+        {
+            string resultado = "";
+            for (int i = 1; i < 100; i++)
+            {
+                if (numero % i == 0)
+                {
+                    resultado += i + "\n";
+                }//fim do if
+            }//fim do for
+            return resultado;
+        }//fim do método
+
+        //Leia um número e verifique se ele é palíndromo(ex: 121, 1331, 1441, 0660)
+        public bool EhPalindromo(string palin)
+        {
+            int fim = palin.Length - 1;//Meço o tamanho de um conjunto de caracteres
+            int inicio = 0;
+
+            while (inicio < fim)
+            {
+                if (palin.Substring(inicio, 1) != palin.Substring(fim, 1))
+                {
+                    return false;
+                }
+                inicio++;
+                fim--;
+            }//fim do while
+            return true;
+        }//fim do método
+        public int contarDigitos(int numero)
+        {
+            int contador = 0;
+
+            // Trata número negativo
+            numero = Math.Abs(numero);
+
+            // Caso o número seja 0, tem 1 dígito
+            if (numero == 0)
+            {
+                contador = 1;
+            }
+            else
+            {
+                // Divide o número por 10 até que vire 0, contando os dígitos
+                while (numero > 0)
+                {
+                    numero = numero / 10;
+                    contador++;
+                }
+            }
+            return contador;
+        }
+
+
+
+
+
     }//fim da classe
 }//fim do projeto

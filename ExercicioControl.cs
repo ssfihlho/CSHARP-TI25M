@@ -68,7 +68,11 @@ namespace Exercicios
                               " 10. Exercicio 02\n" +
                               " 11. Exercicio 03\n" +
                               " 12. Exercicio 04\n" +
-                              " 13. Exercicio 05\n");
+                              " 13. Exercicio 05\n" +
+                              " 14.Contar números pares e ímpares\n" +
+                              " 15.Contar múltiplos\n" +
+                              " 16.Números palindromos\n" +
+                              " 17.Contar digitos \n");
 
             SetOpcao(Convert.ToInt32(Console.ReadLine()));
             Console.Clear();//limpa console
@@ -172,6 +176,32 @@ namespace Exercicios
                         break;
                     case 13:
                         Console.WriteLine(this.modelo.Exercicio05());
+                    break;
+                    case 14:
+                        this.modelo.ContarParImpar();
+                    break;
+                    case 15:
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+                        //Mostrar o resultado da operação
+                        Console.WriteLine(this.modelo.multiploFor(num));
+                        break;
+                    case 16:
+                        Console.WriteLine("Informe um número: ");
+                        string palin = Console.ReadLine();
+                        if (this.modelo.EhPalindromo(palin) == false)
+                        {
+                            Console.WriteLine("Não é Palíndromo");
+                        }
+                        else
+                        {
+                            Console.WriteLine("É Palíndromo");
+                        }
+                    break;
+                    case 17:
+                        Console.WriteLine("Informe um número");
+                        int numero = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("O número possui: " + this.modelo.contarDigitos(numero) + " digitos.");
                     break;
 
 
