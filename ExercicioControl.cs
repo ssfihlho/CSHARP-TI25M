@@ -72,7 +72,9 @@ namespace Exercicios
                               " 14.Contar números pares e ímpares\n" +
                               " 15.Contar múltiplos\n" +
                               " 16.Números palindromos\n" +
-                              " 17.Contar digitos \n");
+                              " 17.Contar digitos \n" +
+                              " 18.Validar senha \n" +
+                              " 19.Ler idades \n");
 
             SetOpcao(Convert.ToInt32(Console.ReadLine()));
             Console.Clear();//limpa console
@@ -203,6 +205,13 @@ namespace Exercicios
                         int numero = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("O número possui: " + this.modelo.contarDigitos(numero) + " digitos.");
                     break;
+                    case 18:
+                        this.modelo.validarSenha();
+                    break;
+                    case 19:
+                        this.modelo.lerIdades();
+                        break;
+
 
 
 

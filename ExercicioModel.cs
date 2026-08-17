@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -296,6 +297,61 @@ namespace Exercicios
             return contador;
         }
 
+
+        public void validarSenha()
+        {
+            string senhaV = "1234";
+            int i = 0;
+            bool acesso = false;
+
+
+            while (i<3)
+            { Console.WriteLine("Digite a senha: ");
+               string senha = Console.ReadLine();
+             
+                if (senha.Equals(senhaV))
+                { Console.WriteLine("Login efetuado!");
+                    acesso = true;
+                    break;
+                }
+
+                else { 
+                    i++;
+                    Console.WriteLine("Senha incorreta!");
+                }
+            
+            }
+
+            if (!acesso)
+            { Console.WriteLine("Número de tentativas excedidas!"); }
+
+        }
+
+
+        public void lerIdades()
+        {
+            int idadeM = 0;
+            int soma = 0;
+            for (int i =0 ; i<5 ;i++) 
+            { Console.WriteLine("Informe a " + i + "° idade:");
+               int idade = Convert.ToInt32(Console.ReadLine());
+                
+
+
+                if (idade >= 18)
+                { soma = soma + idade;
+                   idadeM = idadeM + 1;
+                }
+            }
+            if (idadeM == 0)
+            { Console.WriteLine("Nenhuma idade maior ou igual a 18 foi informada!"); }
+            else { Console.WriteLine("A média das idades maiores que 18 é: " + soma / idadeM); }
+            
+            
+            
+        }
+      
+     
 
 
 
