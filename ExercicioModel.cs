@@ -346,15 +346,57 @@ namespace Exercicios
             if (idadeM == 0)
             { Console.WriteLine("Nenhuma idade maior ou igual a 18 foi informada!"); }
             else { Console.WriteLine("A média das idades maiores que 18 é: " + soma / idadeM); }
-            
-            
+
+        }
+
+        public void exRep07()
+        {
+            Console.WriteLine("Informe um número: ");
+            int num = Convert.ToInt32 (Console.ReadLine());
+
+            while (num >= 0)
+            {
+                Console.WriteLine("Informe um número: ");
+                num = Convert.ToInt32(Console.ReadLine());
+
+                if (num < 0)
+                 { Console.WriteLine("Número negativo encontrado!"); }
+            }
+
+        } public void paresQuadrados()
+        {
+            Console.WriteLine("Informe um número: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 2; i <= num; i += 2)
+            { Console.WriteLine(i * i); }
             
         }
-      
-     
+
+
+        public void CelsiusFh()
+        {
+            double celsius;
+
+            do
+            {
+                Console.Write("Celsius: ");
+                celsius = double.Parse(Console.ReadLine());
+
+                if (celsius != 0)
+                {
+                    double fahrenheit = (celsius * 9 / 5) + 32;
+                    Console.WriteLine("Fahrenheit: " + fahrenheit);
+                }
+
+            } while (celsius != 0);
+        }
+    
 
 
 
 
-    }//fim da classe
+
+
+}//fim da classe
 }//fim do projeto

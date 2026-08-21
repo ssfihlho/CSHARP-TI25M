@@ -6,3 +6,11 @@ C:\Users\claudio.ssfilho\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios
 C:\Users\claudio.ssfilho\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios.exe
 C:\Users\claudio.ssfilho\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios.pdb
 C:\Users\claudio.ssfilho\source\repos\Exercicios\Exercicios\obj\Debug\Exercicios.exe.config
+C:\Users\ssfilho\source\repos\CSHARP-TI25M\bin\Debug\Exercicios.exe.config
+C:\Users\ssfilho\source\repos\CSHARP-TI25M\bin\Debug\Exercicios.exe
+C:\Users\ssfilho\source\repos\CSHARP-TI25M\bin\Debug\Exercicios.pdb
+C:\Users\ssfilho\source\repos\CSHARP-TI25M\obj\Debug\Exercicios.csproj.AssemblyReference.cache
+C:\Users\ssfilho\source\repos\CSHARP-TI25M\obj\Debug\Exercicios.exe.config
+C:\Users\ssfilho\source\repos\CSHARP-TI25M\obj\Debug\Exercicios.csproj.CoreCompileInputs.cache
+C:\Users\ssfilho\source\repos\CSHARP-TI25M\obj\Debug\Exercicios.exe
+C:\Users\ssfilho\source\repos\CSHARP-TI25M\obj\Debug\Exercicios.pdb

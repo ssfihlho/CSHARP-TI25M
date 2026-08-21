@@ -74,7 +74,10 @@ namespace Exercicios
                               " 16.Números palindromos\n" +
                               " 17.Contar digitos \n" +
                               " 18.Validar senha \n" +
-                              " 19.Ler idades \n");
+                              " 19.Ler idades \n" +
+                              " 20.Número negativo \n" +
+                              " 21.Pares quadrados \n" +
+                              " 22.De Celsius para Fahrenheit \n");
 
             SetOpcao(Convert.ToInt32(Console.ReadLine()));
             Console.Clear();//limpa console
@@ -210,7 +213,16 @@ namespace Exercicios
                     break;
                     case 19:
                         this.modelo.lerIdades();
-                        break;
+                    break;
+                    case 20:
+                        this.modelo.exRep07();
+                    break;
+                    case 21:
+                        this.modelo.paresQuadrados();
+                    break;
+                    case 22:
+                        this.modelo.CelsiusFh();
+                    break;
 
 
 
