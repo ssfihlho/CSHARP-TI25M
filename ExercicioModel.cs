@@ -391,8 +391,39 @@ namespace Exercicios
 
             } while (celsius != 0);
         }
-    
 
+        public void conta2050()
+        {
+            int contanum = 0;
+            int i = 0;
+            int num = 0;
+            for (i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"{"Informe o "} {i} {" número:"}");
+                num = int.Parse(Console.ReadLine());
+                
+                
+                if ((num > 20) && (num < 50))
+                { contanum++; }
+             
+            }
+
+            Console.WriteLine($"{"Tem "} {contanum} {" números dentro do intervalo."} ");
+
+        }
+
+        public void contaN()
+        {
+            int i = 2;
+            int contador = 0;   
+
+             Console.WriteLine("Informe o valor de N: ");
+             int N = int.Parse(Console.ReadLine());
+            for (i = 2; contador < N; i += 2)
+            {
+                contador++;
+                Console.WriteLine(i); }
+        }
 
 
 

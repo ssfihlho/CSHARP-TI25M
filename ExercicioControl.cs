@@ -77,7 +77,9 @@ namespace Exercicios
                               " 19.Ler idades \n" +
                               " 20.Número negativo \n" +
                               " 21.Pares quadrados \n" +
-                              " 22.De Celsius para Fahrenheit \n");
+                              " 22.De Celsius para Fahrenheit \n" +
+                              " 23. Conta números entre 20 e 50 \n" +
+                              " 23. Conta pares de 'N' \n");
 
             SetOpcao(Convert.ToInt32(Console.ReadLine()));
             Console.Clear();//limpa console
@@ -222,6 +224,12 @@ namespace Exercicios
                     break;
                     case 22:
                         this.modelo.CelsiusFh();
+                    break;
+                    case 23:
+                        this.modelo.conta2050();
+                    break;
+                    case 24:
+                        this.modelo.contaN();
                     break;
 
 
