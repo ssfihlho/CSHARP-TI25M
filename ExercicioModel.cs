@@ -425,8 +425,51 @@ namespace Exercicios
                 Console.WriteLine(i); }
         }
 
+        public void Fatorial()
+        {
+           
+       
+            int resultado = 1;
 
+            Console.WriteLine("Informe um número: ");
+            int num = int.Parse(Console.ReadLine());
 
+            for (int i = 1; i <= num; i++)
+            {
+                resultado = resultado * i;
+            }
+
+            Console.WriteLine($"O fatorial de {num} é {resultado}.");
+
+        }
+
+        public void faixaEtaria()
+        { 
+        
+            Console.WriteLine("Informe sua idade: ");
+            int idade = int.Parse(Console.ReadLine());
+
+            if (idade < 12)
+            {
+                Console.WriteLine("Criança");
+            }
+
+                else if ((idade >= 12) && (idade <= 17))
+                { Console.WriteLine("Adolescente"); }
+                    
+                    else if ((idade >= 18) && (idade <= 59))
+                    { Console.WriteLine("Adulto"); }
+                        else 
+                        { Console.WriteLine("Idoso"); }
+        
+        }
+        public void Soma500()
+
+        {
+        
+            
+        
+        }
 
 
 }//fim da classe

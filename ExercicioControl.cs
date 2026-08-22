@@ -79,7 +79,10 @@ namespace Exercicios
                               " 21.Pares quadrados \n" +
                               " 22.De Celsius para Fahrenheit \n" +
                               " 23. Conta números entre 20 e 50 \n" +
-                              " 23. Conta pares de 'N' \n");
+                              " 24. Conta pares de 'N' \n" +
+                              " 25. Fatorial de um número \n" +
+                              " 26. Faixa etária \n");
+
 
             SetOpcao(Convert.ToInt32(Console.ReadLine()));
             Console.Clear();//limpa console
@@ -231,7 +234,12 @@ namespace Exercicios
                     case 24:
                         this.modelo.contaN();
                     break;
-
+                    case 25:
+                        this.modelo.Fatorial();
+                    break;
+                    case 26:
+                        this.modelo.faixaEtaria();
+                    break;
 
 
 
